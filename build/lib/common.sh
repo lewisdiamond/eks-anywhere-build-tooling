@@ -223,6 +223,7 @@ function build::common::get_go_path() {
   # This is the path where the specific go binary versions reside in our builder-base image
   local -r gorootbinarypath="/go/go${version}/bin"
   # This is the path that will most likely be correct if running locally
+  echo "$GOPATH/go${version}/bin"
   local -r gopathbinarypath="$GOPATH/go${version}/bin"
   if [ -d "$gorootbinarypath" ]; then
     echo $gorootbinarypath

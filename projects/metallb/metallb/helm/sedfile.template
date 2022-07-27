@@ -1,2 +1,2 @@
 s/appVersion: v\(.*\)$/appVersion: "\1"/
-s/version: .*$/version: ${IMAGE_TAG}/
+s/^version: .*$/version: ${IMAGE_TAG}/
